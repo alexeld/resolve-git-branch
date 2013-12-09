@@ -27,10 +27,14 @@ function deleteBranch(branch, cb) {
 }
 
 test('master', function (t) {
-  resolve(function (err, branch) {
-    t.notOk(err, 'no error')
-    t.equal(branch, 'master', 'resolves correct branch')
-    t.end()
+  // travis checks out HEAD initially
+  checkout('master',  function (err) {
+    // ignore err (due to us being already on master in cases)
+    resolve(function (err, branch) {
+      t.notOk(err, 'no error')
+      t.equal(branch, 'master', 'resolves correct branch')
+      t.end()
+    })
   })
 })
 

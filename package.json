@@ -20,7 +20,7 @@
     "nave": "~0.4.3",
     "tap": "~0.4.3"
   },
-  "keywords": [],
+  "keywords": [ "git", "resolve", "current", "local", "branch" ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",

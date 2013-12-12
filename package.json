@@ -1,6 +1,6 @@
 {
   "name": "resolve-git-branch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Resolves the currently checked out branch of the git repository in the current directory.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,13 @@
     "nave": "~0.4.3",
     "tap": "~0.4.3"
   },
-  "keywords": [ "git", "resolve", "current", "local", "branch" ],
+  "keywords": [
+    "git",
+    "resolve",
+    "current",
+    "local",
+    "branch"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
